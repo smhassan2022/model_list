@@ -1,10 +1,11 @@
-class CountryModel{
+class whatsAppModel{
+
   String _name;
-  String _countryCode;
-  String _capital;
+  String _messages;
+  String _time;
   String _image;
 
-  CountryModel(this._name, this._countryCode, this._capital, this._image);
+  whatsAppModel(this._name, this._messages, this._time, this._image);
 
   String get image => _image;
 
@@ -12,16 +13,16 @@ class CountryModel{
     _image = value;
   }
 
-  String get capital => _capital;
+  String get time => _time;
 
-  set capital(String value) {
-    _capital = value;
+  set time(String value) {
+    _time = value;
   }
 
-  String get countryCode => _countryCode;
+  String get messages => _messages;
 
-  set countryCode(String value) {
-    _countryCode = value;
+  set messages(String value) {
+    _messages = value;
   }
 
   String get name => _name;
